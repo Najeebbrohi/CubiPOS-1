@@ -1,0 +1,176 @@
+#messages-main{
+    height: 630px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.Order-Body{
+    padding-left: 500px !important;
+}
+.Toggle-Btn{
+    width: 500px !important;
+    position: fixed !important;
+    left: 70px !important;
+    top: 136px !important;
+    height: 630px !important;
+}
+.Total-Row{
+    margin: 0px;
+    background: white;
+    position: fixed;
+    bottom: 120px;
+    width: 39%;
+    margin:0px; 
+    background:white;
+}
+.ms-user{
+    margin-bottom: 10px;
+}
+.ms-user .search-box{
+    border-radius: 20px;
+    padding: 10px;
+    color: black;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px lightgrey;
+    margin-top: -13px;
+}
+.input-number{
+    text-align: center !important;
+    width: 45px !important;
+}
+.Card-Sty{
+    box-shadow: 2px 2px 5px lightgrey;
+    border-radius: 10px;
+}
+
+.Card-Sty .Order-Img{
+    border-radius: 15px;
+}
+/* .Order-Img{
+    width: 170px;
+    border-radius: 15px;
+} */
+.SNo-Sty{
+    padding-left: 5px !important;
+    width: 10px !important;
+}
+.Sno-Td{
+    padding-left: 10px !important;
+}
+/* .Quntity-Sty{
+    width: 40px;
+} */
+/* .Table-Sty tbody tr{
+text-align: center;
+} */
+.TotalPriceTable{
+    text-align: center;
+    width: 490px;
+    box-shadow: 2px 2px 30px lightgrey;
+}
+.TotalPriceTable tbody tr td{
+    font-size: 16px;
+    padding: 3px;
+}
+.delete-icon{
+    padding-left: 10px !important;
+}
+.delete-icon i{
+    font-size: 20px;
+    color: red;
+}
+
+.Products-Body{
+    padding: 25px;
+}
+.Bottom-Buttons{
+    /* float: right; */
+    margin-bottom: 14px;
+}
+.Bottom-Buttons button{
+    text-transform: none;
+    font-size: 14px;
+}
+
+.Bottom-Bill-Btns{
+    margin-top: 10px;
+}
+
+.Bottom-Bill-Btns button{
+    width: 224px;
+    margin: 8px;
+    text-transform: none;
+}
+
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+
+
+  /* Handle */
+
+  ::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+  }
+  
+
+
+  /* Handle on hover */
+
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+
+  .Btn-Float-End{
+    float: inline-end !important;
+  }
+@media only screen and (max-width: 600px) {
+    #messages-main{
+        height: 100%;
+    }
+    .Order-Body{
+        padding: 0px !important;
+    }
+   
+    .Toggle-Btn{
+        width: 333px !important;
+        position: fixed !important;
+        left: 17px !important;
+        top: 121px !important;
+    }
+    .Button-Sty1{
+        display: block;
+        margin-top: 56px;
+        width: 125px;
+    }
+    .Button-Sty{
+        display: block;
+        width: 125px;
+    }
+    .input-number{
+        width: 45px !important;
+    }
+    .TotalPriceTable {
+        width: 332px;
+    }
+    .Bottom-Bill-Btns{
+        width: 350px;
+        margin-bottom: 50px;
+    }
+    .Bottom-Bill-Btns button{
+        width: 150px;
+    }
+  }
