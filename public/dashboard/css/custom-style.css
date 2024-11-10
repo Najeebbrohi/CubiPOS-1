@@ -1,0 +1,209 @@
+/* POS css */
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+}
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+}
+.header .nav-link {
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.header #currentTime {
+    font-weight: bold;
+}
+.product-section img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+.product-section img:hover {
+    transform: scale(1.05);
+}
+.total-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Modern Design Elements */
+.total-section p {
+    font-size: 1.1rem;
+}
+h5 {
+    color: #007bff;
+    font-weight: 700;
+}
+.action-buttons {
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    padding: 15px;
+    flex-wrap: wrap;
+    z-index: 10;
+    width: 36.4%;
+}
+.action-buttons button {
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.btn-dark {
+    background-color: #343a40;
+}
+.summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.summary-row {
+    flex: 1;
+    margin-right: 10px;
+}
+.summary-row:last-child {
+    margin-right: 0;
+}
+.summary-row label {
+    display: block;
+    margin-bottom: 5px;
+}
+.summary-row input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.totals {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* Adjust spacing between items */
+}
+.totals-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.totals-row p {
+    flex: 1;
+    padding-right: 15px;
+    /* Adjust for spacing between the two columns */
+}
+/* Improved Responsive */
+@media (max-width: 768px) {
+    .product-section {
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+
+    .header,
+    .total-section {
+        text-align: center;
+    }
+}
+/* Print Section */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    #printableArea,
+    #printableArea * {
+        visibility: visible;
+    }
+
+    #printableArea {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+/**----- ayment Model ----**/
+.payment-table td {
+    font-weight: bold;
+    padding: 5px !important;
+}
+.note, .payment-note {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.quick-pay-buttons .btn {
+    font-weight: bold;
+    width: 70%;
+}
+.quick-pay-buttons{
+    text-align:center;
+}
+
+/* POS reciept */
+.POS-Recipt{
+    width: 300px;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+h1, h2 {
+    text-align: center;
+    margin: 5px 0;
+}
+.pos-header, .total, .footer {
+    text-align: center;
+    margin-bottom: 10px;
+    border-top: 1px solid #ddd;
+}
+.pos-header, .total, .footer p{
+   margin: 0px;
+}
+.details, .items, .summary {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.details p, .items p, .summary p {
+    margin: 5px 0;
+}
+.items, .payment-summary {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+.item {
+    display: flex;
+    justify-content: space-between;
+}
+.product-heading{
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+.payment-summary p, .footer p {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+}
+.footer {
+    font-size: 0.9em;
+    margin-top: 20px;
+    text-align: center;
+}
+.footer p {
+    justify-content: center;
+}
+
+/* Product CSS */
+.add-new-btn{
+    float: inline-end;
+}
+.heading-text{
+    text-align:left !important; 
+    display:inline !important;
+}
