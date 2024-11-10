@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>POS</title>
+    <title>CubiPOS</title>
     <!-- Vendor CSS -->
     <link href="{{ asset('public/dashboard') }}/vendors/fullcalendar/fullcalendar.css" rel="stylesheet">
     <link href="{{ asset('public/dashboard') }}/vendors/animate-css/animate.min.css" rel="stylesheet">
@@ -33,7 +33,6 @@
         }
     </style>
 </head>
-
 <body>
     <header id="header">
         <ul class="header-inner">
@@ -44,11 +43,9 @@
                     <div class="line bottom"></div>
                 </div>
             </li>
-
             <li class="logo hidden-xs">
                 <a href="{{ url('admin_dashboard') }}">Material Admin</a>
             </li>
-
             <li class="pull-right">
                 <ul class="top-menu">
                     <li id="toggle-width">
@@ -152,14 +149,12 @@
                 </ul>
             </li>
         </ul>
-
         <!-- Top Search Content -->
         <div id="top-search-wrap">
             <input type="text">
             <i id="top-search-close">&times;</i>
         </div>
     </header>
-
     <section id="main">
         <aside id="sidebar">
             <div class="sidebar-inner">
@@ -422,7 +417,6 @@
         @yield('content')
 
     </section>
-
     <div id="myModalBarcode" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
